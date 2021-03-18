@@ -214,7 +214,7 @@ function App() {
           <img style={{}} src={orangeleft} className="App-logo" alt="logo" />
         </div>
         <div style={{ flexGrow: 1, textAlign: "end", marginTop: "-300px" }}>
-          <img style={{}} src={blueright} className="App-logo" alt="logo" />
+          <img style={{ marginLeft: width <= 600 ? "16%" : null }} src={blueright} className="App-logo" alt="logo" />
         </div>
       </div>
       <div style={{ display: "flex", marginTop: width <= 600 ? "-200px" : "-300px", marginLeft: width <= 600 ? (width / 3) + 50 : null }}>
