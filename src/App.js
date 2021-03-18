@@ -77,25 +77,25 @@ function App() {
         <div style={{ flex: "74%", paddingTop: 30, paddingLeft: 36 }}>
           <div style={{ width: width <= 600 ? width : null }}>
 
-            <div style={{ width: width <= 600 ? width : 1200, height: 80, display: "flex", margintop: 20 }}>
+            <div style={{ width: width <= 600 ? width : 1200, height: width <= 600 ? 90 : 80, display: "flex", margintop: 20 }}>
               <img src={logo} className="App-logo" alt="logo" />
 
-              <div className="Tab-layout">
-                <Tab label={<span style={{ fontSize: 12, textTransform: "capitalize" }}>Home</span>} />
-                <Tab label={<span style={{ fontSize: 12, textTransform: "capitalize" }}>Features</span>} />
-                <Tab label={<span style={{ fontSize: 12, textTransform: "capitalize" }}>About Us</span>} />
-                <Tab label={<span style={{ fontSize: 12, textTransform: "capitalize" }}>Contact</span>} />
+              <div className="Tab-layout" style={{ marginLeft: width <= 600 ? "12%" : null }}>
+                <Tab label={<span style={{ fontSize: width <= 600 ? 25 : 12, textTransform: "capitalize" }}>Home</span>} />
+                <Tab label={<span style={{ fontSize: width <= 600 ? 25 : 12, textTransform: "capitalize" }}>Features</span>} />
+                <Tab label={<span style={{ fontSize: width <= 600 ? 25 : 12, textTransform: "capitalize" }}>About Us</span>} />
+                <Tab label={<span style={{ fontSize: width <= 600 ? 25 : 12, textTransform: "capitalize" }}>Contact</span>} />
               </div>
             </div>
 
             <div style={{ display: "flex", marginTop: 100, flexFlow: width <= 600 ? "column" : null, alignItems: width <= 600 ? "end" : null }}>
 
-              <div style={{ marginTop: 72, textAlign: width <= 600 ? "center" : "left", flex: "40%", position: "relative", marginBottom: width <= 600 ? 55 : null, marginLeft: '50%' }}>
-                <div style={{ whiteSpace: "nowrap", fontSize: 28, fontWeight: "bold", marginBottom: 28 }}>
+              <div style={{ marginTop: 72, textAlign: width <= 600 ? "center" : "left", flex: "40%", position: "relative", marginBottom: width <= 600 ? 60 : null, marginLeft: width <= 600 ? '50%' : null }}>
+                <div style={{ whiteSpace: "nowrap", fontSize: width <= 600 ? 38 : 28, fontWeight: "bold", marginBottom: 28 }}>
                   Live Your Passion
                     </div>
-                <div style={{ whiteSpace: "nowrap", marginBottom: 28, fontSize: 25 }}>Be an Expert</div>
-                <div style={{ marginBottom: 28, fontSize: 12 }}>
+                <div style={{ whiteSpace: "nowrap", marginBottom: 28, fontSize: width <= 600 ? 35 : 25 }}>Be an Expert</div>
+                <div style={{ marginBottom: 28, fontSize: width <= 600 ? 20 : 12, letterSpacing: width <= 600 ? 1 : null }}>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
                     </div>
                 <div style={{ marginTop: 45 }}>
@@ -118,12 +118,13 @@ function App() {
 
       <div style={{ margin: "auto", width: width <= 600 ? (width * 2 + 40) : 1162 }}>
         <div style={{ marginBottom: 24, textAlign: "left", marginTop: "-500px", marginLeft: 123 }}>
-          <div style={{ height: 30, fontWeight: "bold", fontSize: "large" }}>How it Works</div>
-          <div style={{ width: 171, fontSize: 12 }}> Lorem Ipsum is simply dummy text of the printing and</div>
+          <div style={{ height: 30, fontWeight: "bold", fontSize: width <= 600 ? 35 : "large" }}>How it Works</div>
+          <div style={{ width: width <= 600 ? 200 : 171, marginTop: width <= 600 ? "3%" : null, fontSize: width <= 600 ? 20 : 12, letterSpacing: width <= 600 ? 1 : null }}> Lorem Ipsum is simply dummy text of the printing and</div>
         </div>
         <StepProgressBar
           startingStep={0}
           labelClass={'labelClass'}
+          style={{ fontSize: width <= 600 ? 20 : null }}
           subtitleClass={'subtitleClass'}
           onSubmit={onFormSubmit}
           steps={[
@@ -157,19 +158,19 @@ function App() {
       <div>
         <div style={{ display: "flex" }}>
           <div style={{ flexGrow: 1 }}></div>
-          <div style={{ marginBottom: 24, textAlign: "left", marginTop: 48, flexGrow: 4 }}>
-            <div style={{ height: 30, fontWeight: "bold", fontSize: "large" }}>Features</div>
-            <div style={{ width: 171, fontSize: 12 }}> Lorem Ipsum is simply dummy text of the printing and</div>
+          <div style={{ marginBottom: 24, textAlign: "left", marginTop: 48, flexGrow: 4, marginLeft: width <= 600 ? 123 : null }}>
+            <div style={{ height: 30, fontWeight: "bold", fontSize: width <= 600 ? 35 : "large" }}>Features</div>
+            <div style={{ width: width <= 600 ? 200 : 171, marginTop: width <= 600 ? "8%" : null, fontSize: width <= 600 ? 20 : 12, letterSpacing: width <= 600 ? 1 : null }}> Lorem Ipsum is simply dummy text of the printing and</div>
           </div>
           <div style={{ flexGrow: 1 }}></div>
         </div>
-        <div style={{ marginTop: 39.5, display: "flex", flexFlow: width <= 600 ? "row" : null, width: width <= 600 ? "200%" : null, marginLeft: width <= 600 ? "5%" : null, flexWrap: width <= 600 ? "wrap" : null }}>
+        <div style={{ marginTop: 39.5, display: "flex", flexFlow: width <= 600 ? "row" : null, width: width <= 600 ? width * 2 + width / 2 : null, marginLeft: width <= 600 ? "5%" : null, flexWrap: width <= 600 ? "wrap" : null }}>
           <div style={{ flexGrow: 1, width: "-webkit-fill-available", }}></div>
-          <div class="container" style={{ flexWrap: width <= 600 ? "wrap" : null }}>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+          <div class="container" style={{ flexWrap: width <= 600 ? "wrap" : null, marginLeft: width <= 600 ? '10%' : null }}>
+            <div style={{ marginBottom: width <= 600 ? '2%' : null }} class="item"></div>
+            <div style={{ marginBottom: width <= 600 ? '2%' : null }} class="item"></div>
+            <div style={{ marginBottom: width <= 600 ? '2%' : null }} class="item"></div>
+            <div style={{ marginBottom: width <= 600 ? '2%' : null }} class="item"></div>
           </div>
           <div style={{ flexGrow: 1, width: "-webkit-fill-available" }}></div>
         </div>
@@ -178,10 +179,10 @@ function App() {
           <div style={{ flex: "50%", position: "relative" }}>
             <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
               <div>
-                <div style={{ fontSize: 35, whiteSpace: "nowrap", marginBottom: 15, color: "white", fontWeight: "bold" }}>
+                <div style={{ fontSize: width <= 600 ? 40 : 35, whiteSpace: "nowrap", marginBottom: 15, color: "white", fontWeight: "bold" }}>
                   Watch Video Presenation
                   </div>
-                <div style={{ fontSize: 14, color: "white" }}>
+                <div style={{ fontSize: width <= 600 ? 24 : 14, color: "white" }}>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                   </div>
               </div>
@@ -197,13 +198,13 @@ function App() {
         <div style={{ display: "flex", flexDirection: "row", flexGrow: 1 }}>
           <img style={{ marginTop: 200, height: 500, marginRight: "3%" }} src={mobilemock2} />
           <div style={{ marginTop: 350 }}>
-            <div style={{ whiteSpace: "nowrap", fontSize: 25, fontWeight: "bold", marginBottom: 28 }}>
+            <div style={{ whiteSpace: "nowrap", fontSize: width <= 600 ? 35 : 25, fontWeight: "bold", marginBottom: 28 }}>
               Live Your Passion
                      </div>
-            <div style={{ marginBottom: 28, fontSize: 13 }}>
+            <div style={{ marginBottom: 28, fontSize: width <= 600 ? 22 : 13, letterSpacing: width <= 600 ? 1 : null, width: width <= 600 ? 300 : 281 }}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
                      </div>
-            <img style={{ height: 30 }} src={playstorelogo} className="App-logo" alt="logo" />
+            <img style={{ height: width <= 600 ? 45 : 30 }} src={playstorelogo} className="App-logo" alt="logo" />
           </div>
         </div>
         <div style={{ flexGrow: 1, width: "-webkit-fill-available" }}></div>
@@ -221,13 +222,13 @@ function App() {
         <div style={{ flexGrow: 1, width: "-webkit-fill-available" }}></div>
         <div style={{ display: "flex", flexGrow: 2 }}>
           <div style={{ flexGrow: 2, marginRight: "7%" }}>
-            <div style={{ whiteSpace: "nowrap", fontSize: 25, fontWeight: "bold", marginBottom: 28 }}>
+            <div style={{ whiteSpace: "nowrap", fontSize: width <= 600 ? 35 : 25, fontWeight: "bold", marginBottom: 28 }}>
               Live Your Passion
                       </div>
-            <div style={{ marginBottom: 28, fontSize: 13 }}>
+            <div style={{ marginBottom: 28, fontSize: width <= 600 ? 22 : 13, letterSpacing: width <= 600 ? 1 : null, width: width <= 600 ? 300 : 281 }}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                       </div>
-            <img style={{ height: 30 }} src={playstorelogo} className="App-logo" alt="logo" />
+            <img style={{ height: width <= 600 ? 45 : 30 }} src={playstorelogo} className="App-logo" alt="logo" />
           </div>
           <div style={{ flexGrow: 1 }}></div>
           <img style={{ height: 500, flexGrow: 2 }} src={mobilemock2} />
@@ -243,10 +244,10 @@ function App() {
         </div>
         <div style={{ flex: "50%", position: "relative", marginLeft: width <= 600 ? "25%" : null }}>
           <div style={{ position: "absolute", top: "50%", left: "20%", transform: "translate(-50%, -50%)" }}>
-            <div style={{ color: "white" }}>
+            <div style={{ color: "white", fontSize: width <= 600 ? 22 : null }}>
               Copyright @ 2021 Passion Connect LLP
                   </div>
-            <div style={{ color: "cornflowerblue" }}>
+            <div style={{ color: "cornflowerblue", fontSize: width <= 600 ? 18 : null, marginTop: width <= 600 ? "2%" : null }}>
               All right reserved.
                   </div>
           </div>
