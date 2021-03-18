@@ -77,7 +77,7 @@ function App() {
         <div style={{ flex: "74%", paddingTop: 30, paddingLeft: 36 }}>
           <div style={{ width: width <= 600 ? width : null }}>
 
-            <div style={{ width: width <= 600 ? width : 1200, height: 80, display: "flex", margintop: 20, justifyContent: width <= 600 ? "center" : null }}>
+            <div style={{ width: width <= 600 ? width : 1200, height: 80, display: "flex", margintop: 20 }}>
               <img src={logo} className="App-logo" alt="logo" />
 
               <div className="Tab-layout">
@@ -90,7 +90,7 @@ function App() {
 
             <div style={{ display: "flex", marginTop: 100, flexFlow: width <= 600 ? "column" : null, alignItems: width <= 600 ? "end" : null }}>
 
-              <div style={{ marginTop: 72, textAlign: width <= 600 ? "center" : "left", flex: "40%", position: "relative", marginBottom: width <= 600 ? 55 : null }}>
+              <div style={{ marginTop: 72, textAlign: width <= 600 ? "center" : "left", flex: "40%", position: "relative", marginBottom: width <= 600 ? 55 : null, marginLeft: '50%' }}>
                 <div style={{ whiteSpace: "nowrap", fontSize: 28, fontWeight: "bold", marginBottom: 28 }}>
                   Live Your Passion
                     </div>
@@ -174,7 +174,7 @@ function App() {
           <div style={{ flexGrow: 1, width: "-webkit-fill-available" }}></div>
         </div>
 
-        <div style={{ display: "flex", marginTop: 40, width: width <= 600 ? (width * 2 + (width / 2) / 1.5) : null, height: 465, backgroundImage: "linear-gradient(to right, #3D5AFE ,#052093)", backgroundColor: "blue" }}>
+        <div style={{ display: "flex", marginTop: 40, width: width <= 600 ? (width * 2 + (width / 1.1)) : null, height: 465, backgroundImage: "linear-gradient(to right, #3D5AFE ,#052093)", backgroundColor: "blue" }}>
           <div style={{ flex: "50%", position: "relative" }}>
             <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
               <div>
@@ -192,7 +192,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div style={{ display: "flex", marginLeft: width <= 600 ? width / 3 : null, marginBottom: width <= 600 ? "10%" : null }}>
+      <div style={{ display: "flex", marginLeft: width <= 600 ? "50%" : null, marginBottom: width <= 600 ? "10%" : null }}>
         <div style={{ flexGrow: 1, width: "-webkit-fill-available" }}></div>
         <div style={{ display: "flex", flexDirection: "row", flexGrow: 1 }}>
           <img style={{ marginTop: 200, height: 500, marginRight: "3%" }} src={mobilemock2} />
@@ -214,10 +214,10 @@ function App() {
           <img style={{}} src={orangeleft} className="App-logo" alt="logo" />
         </div>
         <div style={{ flexGrow: 1, textAlign: "end", marginTop: "-300px" }}>
-          <img style={{ marginLeft: width <= 600 ? "16%" : null }} src={blueright} className="App-logo" alt="logo" />
+          <img style={{ marginLeft: width <= 600 ? "60%" : null }} src={blueright} className="App-logo" alt="logo" />
         </div>
       </div>
-      <div style={{ display: "flex", marginTop: width <= 600 ? "-200px" : "-300px", marginLeft: width <= 600 ? (width / 3) + 50 : null }}>
+      <div style={{ display: "flex", marginTop: width <= 600 ? "-200px" : "-300px", marginLeft: width <= 600 ? "50%" : null }}>
         <div style={{ flexGrow: 1, width: "-webkit-fill-available" }}></div>
         <div style={{ display: "flex", flexGrow: 2 }}>
           <div style={{ flexGrow: 2, marginRight: "7%" }}>
@@ -235,7 +235,7 @@ function App() {
         <div style={{ flexGrow: 1, width: "-webkit-fill-available" }}></div>
       </div>
 
-      <div style={{ marginTop: 40, height: 220, backgroundColor: "#2b2d2f", display: "flex", width: width <= 600 ? "200%" : null }}>
+      <div style={{ marginTop: 40, height: 220, backgroundColor: "#2b2d2f", display: "flex", width: width <= 600 ? (width * 2 + (width / 1.1)) : null }}>
         <div style={{ flex: "50%", position: "relative" }}>
           <div style={{ flexGrow: 1, position: "absolute", top: "50%", left: "70%", transform: "translate(-50%, -50%)" }}>
             <img src={logofooter} className="App-logo" alt="logo" />
